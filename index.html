@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu programa</title>
+    <style>
+        body {
+            background-color: rgb( 105, 105, 173) ;
+            color: white;
+            font: normal 20pt Arial;
+        }
+        h1 {
+            color: rgb(255, 212, 22);
+        }
+    </style>
+</head>
+<body>
+    <h1>PrompCalc.App!</h1>
+    <p>Calculadora de prompt</p>
+    <p>Qual operação deseja fazer hoje?</p>
+
+    <button onclick="sum()">Somar</button>
+    <button onclick="sub()">Subtrair</button>
+    <button onclick="mult()">Multiplicar</button>
+    <button onclick="div()">Dividir</button>
+
+    <script> 
+
+    let n1 = 0;
+    let n2 = 0;
+    
+    function sum() {
+        n1 = window.prompt('Digite um número: ');
+        n2 = window.prompt('Digite outro número: ');
+        let sum = parseInt(n1) + parseInt(n2);
+
+        if (n1, n2 !== "") {
+            window.alert(`A soma dos valores é: ${sum}.`);
+        } else if (n1, n2 === "") {
+            window.alert(`Digite os dois números para começar`);
+        };
+    };
+
+    function sub() {
+        n1 = window.prompt('Digite um número: ');
+        n2 = window.prompt('Digite outro número: ');
+        let sub = parseInt(n1) - parseInt(n2);
+
+        if (n1, n2 !== "") {
+            window.alert(`A subtração dos valores é: ${sub}.`);
+        } else if (n1, n2 === "") {
+            window.alert(`Digite os dois números para começar`);
+        };
+    };
+
+    function mult() {
+        n1 = window.prompt('Digite um número: ');
+        n2 = window.prompt('Digite outro número: ');
+        let mult = parseInt(n1) * parseInt(n2);
+
+        if (n1, n2 !== "") {
+            window.alert(`A multiplicação dos valores é: ${mult}.`);
+        } else if (n1, n2 === "") {
+            window.alert(`Digite os dois números para começar`);
+        };
+    };
+
+    function div() {
+        n1 = window.prompt('Digite um número: ');
+        n2 = window.prompt('Digite outro número: ');
+        let div = parseInt(n1) / parseInt(n2);
+
+        if (n1, n2 !== "") {
+            window.alert(`A divisão dos valores é: ${div}.`);
+        } else if (n1, n2 === "") {
+            window.alert(`Digite os dois números para começar`);
+        };
+    };
+
+    
+
+    </script>
+</body>
+</html>
